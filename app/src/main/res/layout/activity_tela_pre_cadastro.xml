@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="br.com.rbeuh.petfacil.View.TelaPreCadastro"
+                android:background="#fffcfdff">
+
+    <include layout="@layout/action_barprecadastro"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/include"></include>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in with Facebook"
+        android:id="@+id/buttonLogFacebook"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="161dp"
+        android:background="#ff2663ad"
+        android:textColor="#fff8fbff"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogEmail"
+        android:layout_alignTop="@+id/buttonLogFacebook"
+        android:layout_alignRight="@+id/buttonLogFacebook"
+        android:layout_alignEnd="@+id/buttonLogFacebook"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffebe799"
+        android:textSize="20sp"
+        android:hint="Cadastre-se com seu e-mail"
+        android:layout_marginLeft="16dp"
+        android:textColor="#ff000000"
+        android:textColorHint="#ff000000"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonInicarSessao"
+        android:layout_below="@+id/buttonLogEmail"
+        android:layout_alignRight="@+id/buttonLogEmail"
+        android:layout_alignEnd="@+id/buttonLogEmail"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffeba326"
+        android:textSize="20sp"
+        android:hint="Iniciar Sessão"
+        android:layout_marginLeft="16dp"
+        android:textColorHint="#ff000000"/>
+
+</RelativeLayout>

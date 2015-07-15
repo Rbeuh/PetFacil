@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".View.TelaPreCadastro"
+            android:label="@string/title_activity_tela_pre_cadastro" >
+        </activity>
+        <activity
+            android:name=".View.TelaCadastro"
+            android:label="@string/title_activity_tela_cadastro" >
+        </activity>
     </application>
 
 </manifest>
