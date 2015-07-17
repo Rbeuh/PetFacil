@@ -11,7 +11,7 @@
              android:id="@+id/action_bar"></include>
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextNome"
         android:layout_marginTop="16dp"
@@ -20,8 +20,10 @@
         android:hint="Nome"
         android:textColorHint="#ff000000"
         android:layout_below="@+id/action_bar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+
+        android:background="#DCEDC8"
+        android:layout_alignRight="@+id/buttonCriarConta"
+        android:layout_alignEnd="@+id/buttonCriarConta"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -29,12 +31,15 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/editTextEmail"
+        android:layout_marginTop="31dp"
+        android:textColorHint="#ff000000"
+        android:hint="E-mail"
+        android:background="#DCEDC8"
         android:layout_below="@+id/editTextNome"
         android:layout_alignLeft="@+id/editTextNome"
         android:layout_alignStart="@+id/editTextNome"
-        android:layout_marginTop="16dp"
-        android:textColorHint="#ff000000"
-        android:hint="E-mail"/>
+        android:layout_alignRight="@+id/editTextNome"
+        android:layout_alignEnd="@+id/editTextNome"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,10 +50,12 @@
         android:hint="Senha"
         android:textColor="#ff000000"
         android:textColorHint="#ff000000"
+        android:layout_marginTop="38dp"
+        android:background="#DCEDC8"
         android:layout_below="@+id/editTextEmail"
         android:layout_alignLeft="@+id/editTextEmail"
         android:layout_alignStart="@+id/editTextEmail"
-        android:layout_marginTop="21dp"/>
+        />
 
     <EditText
         android:layout_width="wrap_content"
@@ -58,10 +65,11 @@
         android:id="@+id/editTextConfSenha"
         android:textColorHint="#ff000000"
         android:hint="Confirme sua senha"
+        android:layout_marginTop="45dp"
+        android:background="#DCEDC8"
         android:layout_below="@+id/editTextSenha"
         android:layout_alignLeft="@+id/editTextSenha"
-        android:layout_alignStart="@+id/editTextSenha"
-        android:layout_marginTop="20dp"/>
+        android:layout_alignStart="@+id/editTextSenha"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -76,7 +84,7 @@
         android:layout_below="@+id/editTextConfSenha"
         android:layout_centerHorizontal="true"
         android:textSize="25dp"
-        android:textColorHint="#ff000000"
+        android:textColorHint="#FF747474"
 
         />
 

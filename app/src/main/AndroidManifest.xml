@@ -24,6 +24,10 @@
             android:name=".View.TelaCadastro"
             android:label="@string/title_activity_tela_cadastro" >
         </activity>
+        <activity
+            android:name=".View.TelaLogin"
+            android:label="@string/title_activity_tela_login" >
+        </activity>
     </application>
 
 </manifest>

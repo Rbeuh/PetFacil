@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="br.com.rbeuh.petfacil.View.TelaLogin"
+                android:background="#fff8fffb">
+
+
+        <include layout="@layout/action_barprecadastro"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/include"></include>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmailLogin"
+        android:layout_marginTop="45dp"
+        android:textColorHint="#ff000000"
+        android:hint="E-mail"
+        android:background="#DCEDC8"
+        android:layout_below="@+id/include"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextSenhaLogin"
+        android:hint="Senha"
+        android:textColorHint="#ff000000"
+        android:background="#DCEDC8"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/editTextEmailLogin"
+        android:layout_alignLeft="@+id/editTextEmailLogin"
+        android:layout_alignStart="@+id/editTextEmailLogin"
+        android:layout_alignRight="@+id/editTextEmailLogin"
+        android:layout_alignEnd="@+id/editTextEmailLogin"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#ff747474"
+        android:hint="Iniciar sessão"
+        android:background="@drawable/botao_arredondado"
+        android:textSize="25dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"/>
+
+
+</RelativeLayout>

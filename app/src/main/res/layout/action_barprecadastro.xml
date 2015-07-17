@@ -5,9 +5,10 @@
               android:layout_height="match_parent"
 
 
-              android:background="#ff31bd41"
+              android:background="@drawable/gradienteverde"
               android:baselineAligned="true"
               android:weightSum="1">
+
 
 
     <ImageButton
@@ -28,3 +29,4 @@
         android:gravity="center_vertical|center_horizontal"/>
 
 </LinearLayout>
+
