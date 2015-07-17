@@ -16,7 +16,7 @@
         android:layout_height="56dp"
         android:id="@+id/imageButton"
         android:src="@drawable/ic_reply_black_24dp"
-        android:background="#ff31bd41"
+        android:background="@drawable/gradienteverde"
         android:layout_weight="0.09"/>
 
     <TextView

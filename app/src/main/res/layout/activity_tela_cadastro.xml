@@ -3,7 +3,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:context="br.com.rbeuh.petfacil.View.TelaCadastro"
-                android:background="#fffdffff">
+                android:background="#fffdffff"
+    >
 
     <include layout="@layout/action_barprecadastro"
              android:layout_width="match_parent"
@@ -14,16 +15,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextNome"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginTop="35dp"
         android:hint="Nome"
         android:textColorHint="#ff000000"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/edittext_bordacolor"
         android:layout_below="@+id/action_bar"
-
-        android:background="#DCEDC8"
-        android:layout_alignRight="@+id/buttonCriarConta"
-        android:layout_alignEnd="@+id/buttonCriarConta"/>
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"
+        android:textIsSelectable="true"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -31,15 +34,16 @@
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/editTextEmail"
-        android:layout_marginTop="31dp"
         android:textColorHint="#ff000000"
         android:hint="E-mail"
-        android:background="#DCEDC8"
+        android:background="@drawable/edittext_bordacolor"
         android:layout_below="@+id/editTextNome"
         android:layout_alignLeft="@+id/editTextNome"
         android:layout_alignStart="@+id/editTextNome"
         android:layout_alignRight="@+id/editTextNome"
-        android:layout_alignEnd="@+id/editTextNome"/>
+        android:layout_alignEnd="@+id/editTextNome"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -50,12 +54,14 @@
         android:hint="Senha"
         android:textColor="#ff000000"
         android:textColorHint="#ff000000"
-        android:layout_marginTop="38dp"
-        android:background="#DCEDC8"
+        android:background="@drawable/edittext_bordacolor"
         android:layout_below="@+id/editTextEmail"
         android:layout_alignLeft="@+id/editTextEmail"
         android:layout_alignStart="@+id/editTextEmail"
-        />
+        android:layout_alignRight="@+id/editTextEmail"
+        android:layout_alignEnd="@+id/editTextEmail"
+        android:layout_marginBottom="15dp"
+        android:textSize="25dp"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -65,11 +71,13 @@
         android:id="@+id/editTextConfSenha"
         android:textColorHint="#ff000000"
         android:hint="Confirme sua senha"
-        android:layout_marginTop="45dp"
-        android:background="#DCEDC8"
+        android:background="@drawable/edittext_bordacolor"
         android:layout_below="@+id/editTextSenha"
         android:layout_alignLeft="@+id/editTextSenha"
-        android:layout_alignStart="@+id/editTextSenha"/>
+        android:layout_alignStart="@+id/editTextSenha"
+        android:layout_alignRight="@+id/editTextSenha"
+        android:layout_alignEnd="@+id/editTextSenha"
+        android:textSize="25dp"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
