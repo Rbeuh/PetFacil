@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.rbeuh.petfacil.TelaPrincipal">
+    tools:context="br.com.rbeuh.petfacil.View.TelaPrincipal">
 
     <!-- As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions. -->
@@ -39,7 +39,7 @@
               android:layout_width="@dimen/navigation_drawer_width"
               android:layout_height="match_parent"
               android:layout_gravity="start"
-              android:name="br.com.rbeuh.petfacil.NavigationDrawerFragment"
+              android:name="br.com.rbeuh.petfacil.Fragments.NavigationDrawerFragment"
               tools:layout="@layout/fragment_navigation_drawer"/>
 
 </android.support.v4.widget.DrawerLayout>
