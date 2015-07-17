@@ -28,6 +28,10 @@
             android:name=".View.TelaLogin"
             android:label="@string/title_activity_tela_login" >
         </activity>
+        <activity
+            android:name=".TelaPrincipal"
+            android:label="@string/title_activity_tela_principal" >
+        </activity>
     </application>
 
 </manifest>
