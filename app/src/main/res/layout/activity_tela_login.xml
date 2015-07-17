@@ -20,15 +20,17 @@
         android:layout_marginTop="45dp"
         android:textColorHint="#ff000000"
         android:hint="E-mail"
-        android:background="#DCEDC8"
+        android:background="@drawable/edittext_bordacolor"
         android:layout_below="@+id/include"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="22dp"
         android:layout_marginStart="22dp"
-
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button"/>
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -37,28 +39,29 @@
         android:ems="10"
         android:id="@+id/editTextSenhaLogin"
         android:hint="Senha"
+        android:background="@drawable/edittext_bordacolor"
         android:textColorHint="#ff000000"
-        android:background="#DCEDC8"
-        android:layout_marginTop="38dp"
         android:layout_below="@+id/editTextEmailLogin"
         android:layout_alignLeft="@+id/editTextEmailLogin"
         android:layout_alignStart="@+id/editTextEmailLogin"
         android:layout_alignRight="@+id/editTextEmailLogin"
-        android:layout_alignEnd="@+id/editTextEmailLogin"/>
+        android:layout_alignEnd="@+id/editTextEmailLogin"
+        android:textSize="25dp"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:textColorHint="#ff747474"
         android:hint="Iniciar sessão"
         android:background="@drawable/botao_arredondado"
         android:textSize="25dp"
         android:paddingLeft="35dp"
-        android:paddingRight="35dp"/>
+        android:paddingRight="35dp"
+        android:layout_below="@+id/editTextSenhaLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"/>
 
 
 </RelativeLayout>
