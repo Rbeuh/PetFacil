@@ -4,19 +4,48 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import br.com.rbeuh.petfacil.R;
 
 
 public class TelaCadastro extends ActionBarActivity
 {
+    private EditText editTextNome;
+    private EditText editTextEmail;
+    private EditText editTextSenha;
+    private EditText editTextConfSenha;
+    private Button buttonCriarConta;
+
+    public void initialize()
+    {
+        editTextNome = (EditText)findViewById(R.id.editTextNome);
+        editTextEmail = (EditText)findViewById(R.id.editTextEmail);
+        editTextSenha = (EditText)findViewById(R.id.editTextSenha);
+        editTextConfSenha = (EditText)findViewById(R.id.editTextConfSenha);
+        buttonCriarConta = (Button)findViewById(R.id.buttonCriarConta);
+        buttonCriarConta.setOnClickListener(buttonCriarConta_click);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_cadastro);
+
+        initialize();
     }
+
+    View.OnClickListener buttonCriarConta_click = new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+
+        }
+    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)

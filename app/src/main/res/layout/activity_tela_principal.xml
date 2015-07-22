@@ -20,8 +20,7 @@
 
         <include layout="@layout/menu_principal"
                  android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
-                 android:id="@+id/"></include>
+                 android:layout_height="wrap_content"></include>
 
         <FrameLayout
             android:id="@+id/container"
