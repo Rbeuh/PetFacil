@@ -4,7 +4,7 @@
                 android:layout_height="match_parent"
                 tools:context="br.com.rbeuh.petfacil.View.TelaCadastro"
                 android:background="#fffdffff"
-    >
+                android:id="@+id/">
 
     <include layout="@layout/action_barprecadastro"
              android:layout_width="match_parent"
@@ -27,7 +27,8 @@
         android:focusable="false"
         android:layout_marginBottom="15dp"
         android:textSize="25dp"
-        android:textIsSelectable="true"/>
+        android:textIsSelectable="true"
+        android:maxLength="150"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -44,7 +45,8 @@
         android:layout_alignRight="@+id/editTextNome"
         android:layout_alignEnd="@+id/editTextNome"
         android:layout_marginBottom="15dp"
-        android:textSize="25dp"/>
+        android:textSize="25dp"
+        android:maxLength="150"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -62,7 +64,8 @@
         android:layout_alignRight="@+id/editTextEmail"
         android:layout_alignEnd="@+id/editTextEmail"
         android:layout_marginBottom="15dp"
-        android:textSize="25dp"/>
+        android:textSize="25dp"
+        android:maxLength="350"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -78,7 +81,8 @@
         android:layout_alignStart="@+id/editTextSenha"
         android:layout_alignRight="@+id/editTextSenha"
         android:layout_alignEnd="@+id/editTextSenha"
-        android:textSize="25dp"/>
+        android:textSize="25dp"
+        android:maxLength="350"/>
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -96,13 +100,15 @@
         android:textColorHint="#FF747474"
         android:layout_below="@+id/editTextConfSenha"
         android:layout_centerHorizontal="true"/>
-    <include layout="@layout/actionbar_inferior"
+
+    <include layout="@layout/actionbar_inferior_decoracao"
+             android:layout_below="@id/buttonCriarConta"
              android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_alignParentBottom="true"
-             android:layout_alignParentLeft="true"
-             android:layout_alignParentStart="true">
+             android:layout_height="match_parent"
+             android:layout_marginTop="146dp"
+             android:layout_marginBottom="-7dp"
+        >
+
 
     </include>
-
 </RelativeLayout>

@@ -12,15 +12,21 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/">
 
-        <include layout="@layout/action_barprecadastro"
+        <include layout="@layout/actionbar_fragment"
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"></include>
 
         <include layout="@layout/menu_principal"
                  android:layout_width="match_parent"
+<<<<<<< HEAD
                  android:layout_height="wrap_content"></include>
+=======
+                 android:layout_height="wrap_content"
+                 ></include>
+>>>>>>> origin/master
 
         <FrameLayout
             android:id="@+id/container"
@@ -33,7 +39,7 @@
 
         <include layout="@layout/actionbar_inferior"
                  android:layout_width="match_parent"
-                 android:layout_height="wrap_content"
+                 android:layout_height="match_parent"
                  android:layout_marginBottom="0dp"
                  android:layout_marginTop="-55dp">
 
