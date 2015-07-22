@@ -10,14 +10,16 @@
               android:weightSum="1">
 
 
-
-    <ImageButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="56dp"
-        android:id="@+id/imageButton"
-        android:src="@drawable/ic_reply_black_24dp"
         android:background="@drawable/gradienteverde"
-        android:layout_weight="0.09"/>
+        android:layout_weight="0.09"
+        android:hint="Início"
+        android:textColorHint="#ffffffff"
+        android:textSize="22dp"/>
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -27,6 +29,9 @@
         android:id="@+id/textView"
         android:layout_weight="0.11"
         android:gravity="center_vertical|center_horizontal"/>
+
+
+        />
 
 </LinearLayout>
 
