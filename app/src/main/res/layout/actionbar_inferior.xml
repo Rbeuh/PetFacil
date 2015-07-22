@@ -6,11 +6,5 @@
               android:background="@drawable/gradiente_verde_invertido"
               android:baselineAligned="true"
               android:weightSum="1">
-
-
-
-
-
-
 </LinearLayout>
 
