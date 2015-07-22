@@ -1,5 +1,7 @@
 package br.com.rbeuh.petfacil.View;
 
+import android.content.Intent;
+import android.os.CountDownTimer;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,6 +18,24 @@ public class TelaInicial extends ActionBarActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_inicial);
+
+        CountDownTimer countDownTimer = new CountDownTimer(3000, 1000)
+        {
+            @Override
+            public void onTick(long millisUntilFinished)
+            {
+
+            }
+
+            @Override
+            public void onFinish()
+            {
+                Intent i = new Intent(getBaseContext(), TelaPrincipal.class);
+                startActivity(i);
+            }
+        };
+
+        countDownTimer.start();
     }
 
     @Override
@@ -42,4 +62,6 @@ public class TelaInicial extends ActionBarActivity
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

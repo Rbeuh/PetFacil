@@ -12,8 +12,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/">
+        android:layout_height="match_parent">
 
         <include layout="@layout/actionbar_fragment"
                  android:layout_width="match_parent"
@@ -21,12 +20,8 @@
 
         <include layout="@layout/menu_principal"
                  android:layout_width="match_parent"
-<<<<<<< HEAD
+
                  android:layout_height="wrap_content"></include>
-=======
-                 android:layout_height="wrap_content"
-                 ></include>
->>>>>>> origin/master
 
         <FrameLayout
             android:id="@+id/container"
