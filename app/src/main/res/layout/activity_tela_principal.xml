@@ -20,12 +20,25 @@
 
         <include layout="@layout/menu_principal"
                  android:layout_width="match_parent"
-                 android:layout_height="wrap_content"></include>
+                 android:layout_height="wrap_content"
+                 android:id="@+id/"></include>
 
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:layout_marginBottom="50dp">
+
+        </FrameLayout>
+
+        <include layout="@layout/actionbar_inferior"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="0dp"
+                 android:layout_marginTop="-55dp">
+
+        </include>
     </LinearLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat
