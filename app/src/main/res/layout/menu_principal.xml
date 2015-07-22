@@ -8,7 +8,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/buttonProximidade"
         android:layout_weight="0.18"
         android:background="@drawable/bordatextview"
         android:hint="Proximidade"
@@ -18,7 +18,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/buttonServico"
         android:layout_weight="0.38"
         android:background="@drawable/bordatextview"
         android:hint="Serviço"
@@ -28,7 +28,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
+        android:id="@+id/buttonProduto"
         android:layout_weight="0.50"
         android:background="@drawable/bordatextview"
         android:hint="Produto"

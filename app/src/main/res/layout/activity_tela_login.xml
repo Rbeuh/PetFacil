@@ -63,7 +63,6 @@
         android:paddingLeft="18dp"
         android:paddingRight="18dp"
         android:paddingBottom="13dp"
-
         android:layout_below="@+id/editTextSenhaLogin"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
@@ -75,7 +74,6 @@
              android:layout_marginBottom="-7dp"
              android:layout_marginTop="225dp"
              android:layout_below="@+id/buttonIniciarSessao">
-
     </include>
 
 </RelativeLayout>
