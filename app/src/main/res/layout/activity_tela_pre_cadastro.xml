@@ -60,6 +60,4 @@
         android:layout_marginLeft="16dp"
         android:textColorHint="#ff000000"/>
 
-
-
 </RelativeLayout>

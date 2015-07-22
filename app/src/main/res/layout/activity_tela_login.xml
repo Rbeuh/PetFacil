@@ -24,7 +24,7 @@
         android:layout_below="@+id/include"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="22dp"
         android:layout_marginStart="22dp"
         android:layout_marginRight="16dp"
         android:layout_alignParentRight="true"
@@ -56,25 +56,12 @@
         android:textColorHint="#ff747474"
         android:hint="Iniciar sessão"
         android:background="@drawable/botao_arredondado"
-        android:textSize="28dp"
-        android:paddingTop="13dp"
-        android:paddingLeft="18dp"
-        android:paddingRight="18dp"
-        android:paddingBottom="13dp"
-
+        android:textSize="25dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
         android:layout_below="@+id/editTextSenhaLogin"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
-        />
-
-    <include layout="@layout/actionbar_inferior"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:layout_alignParentBottom="true"
-             android:layout_alignParentLeft="true"
-             android:layout_alignParentStart="true">
-
-    </include>
+        android:layout_marginTop="47dp"/>
 
 
 </RelativeLayout>
