@@ -29,4 +29,18 @@ public class UsuarioController
             ShowMessage.showDialog(context, "Atenção!!!", e.getMessage());
         }
     }
+
+    public void login ( String email, String senha)
+    {
+        try
+        {
+
+        }
+        catch(Exception e)
+        {
+
+        }
+    }
+
+
 }

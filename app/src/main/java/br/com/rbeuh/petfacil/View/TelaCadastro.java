@@ -7,7 +7,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import br.com.rbeuh.petfacil.Controller.UsuarioController;
 import br.com.rbeuh.petfacil.R;
 
 
@@ -27,7 +29,10 @@ public class TelaCadastro extends ActionBarActivity
         editTextConfSenha = (EditText)findViewById(R.id.editTextConfSenha);
         buttonCriarConta = (Button)findViewById(R.id.buttonCriarConta);
         buttonCriarConta.setOnClickListener(buttonCriarConta_click);
+
     }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -43,7 +48,14 @@ public class TelaCadastro extends ActionBarActivity
         @Override
         public void onClick(View v)
         {
-
+            UsuarioController usuarioController = new UsuarioController(getApplicationContext());
+            usuarioController.cadastrar
+                    (
+                            editTextNome.getText().toString(),
+                            editTextEmail.getText().toString(),
+                            editTextSenha.getText().toString(),
+                            editTextConfSenha.getText().toString()
+                    );
         }
     };
 
