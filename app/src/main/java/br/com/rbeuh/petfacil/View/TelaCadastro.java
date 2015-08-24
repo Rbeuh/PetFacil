@@ -26,7 +26,6 @@ public class TelaCadastro extends ActionBarActivity
         editTextSenha = (EditText)findViewById(R.id.editTextSenha);
         editTextConfSenha = (EditText)findViewById(R.id.editTextConfSenha);
         buttonCriarConta = (Button)findViewById(R.id.buttonCriarConta);
-        buttonCriarConta.setOnClickListener(buttonCriarConta_click);
     }
 
     @Override
@@ -36,16 +35,8 @@ public class TelaCadastro extends ActionBarActivity
         setContentView(R.layout.activity_tela_cadastro);
 
         initialize();
+        getSupportActionBar().hide();
     }
-
-    View.OnClickListener buttonCriarConta_click = new View.OnClickListener()
-    {
-        @Override
-        public void onClick(View v)
-        {
-
-        }
-    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
