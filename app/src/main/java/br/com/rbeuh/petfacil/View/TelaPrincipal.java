@@ -37,6 +37,8 @@ public class TelaPrincipal extends ActionBarActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        getSupportActionBar().hide();
     }
 
     @Override
@@ -48,6 +50,7 @@ public class TelaPrincipal extends ActionBarActivity
                 .replace(R.id.container, PlaceholderFragment.newInstance())
                 .commit();
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
