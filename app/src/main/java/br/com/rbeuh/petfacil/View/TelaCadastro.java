@@ -7,7 +7,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import br.com.rbeuh.petfacil.Controller.UsuarioController;
 import br.com.rbeuh.petfacil.R;
 
 
@@ -26,7 +28,14 @@ public class TelaCadastro extends ActionBarActivity
         editTextSenha = (EditText)findViewById(R.id.editTextSenha);
         editTextConfSenha = (EditText)findViewById(R.id.editTextConfSenha);
         buttonCriarConta = (Button)findViewById(R.id.buttonCriarConta);
+<<<<<<< HEAD
+=======
+        buttonCriarConta.setOnClickListener(buttonCriarConta_click);
+
+>>>>>>> cb4be8d8b940fea193650cebccbf19811d6b0334
     }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -38,6 +47,25 @@ public class TelaCadastro extends ActionBarActivity
         getSupportActionBar().hide();
     }
 
+<<<<<<< HEAD
+=======
+    View.OnClickListener buttonCriarConta_click = new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+            UsuarioController usuarioController = new UsuarioController(getApplicationContext());
+            usuarioController.cadastrar
+                    (
+                            editTextNome.getText().toString(),
+                            editTextEmail.getText().toString(),
+                            editTextSenha.getText().toString(),
+                            editTextConfSenha.getText().toString()
+                    );
+        }
+    };
+
+>>>>>>> cb4be8d8b940fea193650cebccbf19811d6b0334
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {

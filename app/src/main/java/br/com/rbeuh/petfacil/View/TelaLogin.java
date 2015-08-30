@@ -4,14 +4,45 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
+import br.com.rbeuh.petfacil.Controller.UsuarioController;
+import br.com.rbeuh.petfacil.Model.Usuario;
 import br.com.rbeuh.petfacil.R;
 
 
 public class TelaLogin extends ActionBarActivity
 {
 
-    @Override
+    private EditText editTextEmailLogin;
+    private EditText editTextSenhaLogin;
+    private Button buttonLogin;
+
+    public void Initialize()
+    {
+        editTextEmailLogin = (EditText)findViewById(R.id.editTextEmailLogin);
+        editTextSenhaLogin = (EditText)findViewById(R.id.editTextSenhaLogin);
+        buttonLogin = (Button)findViewById(R.id.buttonInicarSessao);
+        buttonLogin.setOnClickListener(buttonLogin_Click);
+    }
+
+    View.OnClickListener buttonLogin_Click = new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+            UsuarioController usuarioController = new UsuarioController(getBaseContext());
+            usuarioController.login
+                    (
+                      editTextEmailLogin.getText().toString(),
+                      editTextSenhaLogin.getText().toString()
+                    );
+        }
+    };
+
+   @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
