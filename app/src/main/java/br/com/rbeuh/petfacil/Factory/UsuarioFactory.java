@@ -1,13 +1,19 @@
 package br.com.rbeuh.petfacil.Factory;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.xml.validation.Validator;
+
 import br.com.rbeuh.petfacil.Model.Usuario;
+import br.com.rbeuh.petfacil.Util.EmailValidator;
 
 /**
  * Created by enzo on 22/07/2015.
  */
 public class UsuarioFactory
 {
-    public static Usuario gerarUsuario(String nome, String email, String senha, String confSenha)
+    public static Usuario gerarUsuario(String nome, String email, String senha, String confSenha) throws IllegalAccessException
     {
         Usuario usuario = null;
 
@@ -16,12 +22,26 @@ public class UsuarioFactory
 
         if(email.trim().length() > 150 || email.trim().length() < 3)
         {
+<<<<<<< HEAD
           throw new IllegalArgumentException("M�ximo de caract�res:150, mpinimo:3 ");
+=======
+          throw new IllegalArgumentException("M�ximo de caract�res:150, mínimo:3 ");
+>>>>>>> origin/master
         }
 
-        if(senha.trim().length() > 350 || senha.trim().length() < 6)
+       EmailValidator emailValidator = new EmailValidator();
+
+        emailValidator.validate(email.trim());
+
         {
+<<<<<<< HEAD
             throw new IllegalArgumentException("M�ximo de caract�res: 350, m�nimo: 6");
+=======
+            if (senha.trim().length() > 350 || senha.trim().length() < 6)
+            {
+                throw new IllegalArgumentException("M�ximo de caract�res: 350, m�nimo: 6");
+            }
+>>>>>>> origin/master
         }
 
         if(!confSenha.trim().equals(senha.trim()))
@@ -33,6 +53,8 @@ public class UsuarioFactory
 
         return usuario;
     }
+
+
 
 
 }
