@@ -1,5 +1,6 @@
 package br.com.rbeuh.petfacil.View;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -20,6 +21,7 @@ public class TelaCadastro extends ActionBarActivity
     private EditText editTextSenha;
     private EditText editTextConfSenha;
     private Button buttonCriarConta;
+    private Context context = this;
 
     public void initialize()
     {
@@ -28,11 +30,7 @@ public class TelaCadastro extends ActionBarActivity
         editTextSenha = (EditText)findViewById(R.id.editTextSenha);
         editTextConfSenha = (EditText)findViewById(R.id.editTextConfSenha);
         buttonCriarConta = (Button)findViewById(R.id.buttonCriarConta);
-<<<<<<< HEAD
-=======
         buttonCriarConta.setOnClickListener(buttonCriarConta_click);
-
->>>>>>> cb4be8d8b940fea193650cebccbf19811d6b0334
     }
 
 
@@ -47,14 +45,12 @@ public class TelaCadastro extends ActionBarActivity
         getSupportActionBar().hide();
     }
 
-<<<<<<< HEAD
-=======
     View.OnClickListener buttonCriarConta_click = new View.OnClickListener()
     {
         @Override
         public void onClick(View v)
         {
-            UsuarioController usuarioController = new UsuarioController(getApplicationContext());
+            UsuarioController usuarioController = new UsuarioController(context);
             usuarioController.cadastrar
                     (
                             editTextNome.getText().toString(),
@@ -65,7 +61,6 @@ public class TelaCadastro extends ActionBarActivity
         }
     };
 
->>>>>>> cb4be8d8b940fea193650cebccbf19811d6b0334
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
