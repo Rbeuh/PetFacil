@@ -1,27 +1,39 @@
 package br.com.rbeuh.petfacil.Factory;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.xml.validation.Validator;
+
 import br.com.rbeuh.petfacil.Model.Usuario;
+import br.com.rbeuh.petfacil.Util.EmailValidator;
 
 /**
  * Created by enzo on 22/07/2015.
  */
 public class UsuarioFactory
 {
-    public static Usuario gerarUsuario(String nome, String email, String senha, String confSenha)
+    public static Usuario gerarUsuario(String nome, String email, String senha, String confSenha) throws IllegalAccessException
     {
         Usuario usuario = null;
 
         if (nome.trim().length() > 150 || nome.trim().length() < 3)
-            throw new IllegalArgumentException("Máximo de caracteres: 150, mínimo: 2");
+            throw new IllegalArgumentException("Mï¿½ximo de caracteres: 150, mï¿½nimo: 2");
 
         if(email.trim().length() > 150 || email.trim().length() < 3)
         {
-          throw new IllegalArgumentException("Máximo de caractéres:150, mpinimo:3 ");
+          throw new IllegalArgumentException("Mï¿½ximo de caractï¿½res:150, mÃ­nimo:3 ");
         }
 
-        if(senha.trim().length() > 350 || senha.trim().length() < 6)
+       EmailValidator emailValidator = new EmailValidator();
+
+        emailValidator.validate(email.trim());
+
         {
-            throw new IllegalArgumentException("Máximo de caractéres: 350, mínimo: 6");
+            if (senha.trim().length() > 350 || senha.trim().length() < 6)
+            {
+                throw new IllegalArgumentException("Mï¿½ximo de caractï¿½res: 350, mï¿½nimo: 6");
+            }
         }
 
         if(confSenha.trim() != senha.trim())
@@ -31,6 +43,8 @@ public class UsuarioFactory
 
         return usuario;
     }
+
+
 
 
 }
