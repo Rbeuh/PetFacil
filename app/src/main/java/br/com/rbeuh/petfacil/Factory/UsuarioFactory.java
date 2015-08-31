@@ -20,6 +20,12 @@ public class UsuarioFactory
         if (nome.trim().length() > 150 || nome.trim().length() < 3)
             throw new IllegalArgumentException("M�ximo de caracteres: 150, m�nimo: 2");
 
+
+        if((nome.trim() == "") || (email.trim() == "") || (senha.trim() == "") || (confSenha.trim() == ""))
+        {
+            throw  new IllegalArgumentException("Não pode haver campos em branco!");
+        }
+
         if(email.trim().length() > 150 || email.trim().length() < 3)
         {
           throw new IllegalArgumentException("M�ximo de caract�res:150, mínimo:3 ");
