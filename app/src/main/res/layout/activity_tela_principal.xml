@@ -20,17 +20,21 @@
 
         <include layout="@layout/actionbar_fragment"
                  android:layout_width="match_parent"
-                 android:layout_height="wrap_content"></include>
+                 android:layout_height="wrap_content"/>
 
         <include layout="@layout/menu_principal"
                  android:layout_width="match_parent"
 
+<<<<<<< HEAD
+                 android:layout_height="wrap_content"/>
+=======
                  android:layout_height="wrap_content"></include>
 <<<<<<< HEAD
 
 
 =======
 >>>>>>> 9274da998667b65dd2d3881a7655f75576f269f8
+>>>>>>> cb4be8d8b940fea193650cebccbf19811d6b0334
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"

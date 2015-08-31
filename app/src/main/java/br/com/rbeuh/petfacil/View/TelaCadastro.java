@@ -28,8 +28,11 @@ public class TelaCadastro extends ActionBarActivity
         editTextSenha = (EditText)findViewById(R.id.editTextSenha);
         editTextConfSenha = (EditText)findViewById(R.id.editTextConfSenha);
         buttonCriarConta = (Button)findViewById(R.id.buttonCriarConta);
+<<<<<<< HEAD
+=======
         buttonCriarConta.setOnClickListener(buttonCriarConta_click);
 
+>>>>>>> cb4be8d8b940fea193650cebccbf19811d6b0334
     }
 
 
@@ -41,8 +44,11 @@ public class TelaCadastro extends ActionBarActivity
         setContentView(R.layout.activity_tela_cadastro);
 
         initialize();
+        getSupportActionBar().hide();
     }
 
+<<<<<<< HEAD
+=======
     View.OnClickListener buttonCriarConta_click = new View.OnClickListener()
     {
         @Override
@@ -59,6 +65,7 @@ public class TelaCadastro extends ActionBarActivity
         }
     };
 
+>>>>>>> cb4be8d8b940fea193650cebccbf19811d6b0334
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {

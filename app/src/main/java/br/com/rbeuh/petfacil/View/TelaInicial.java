@@ -18,6 +18,7 @@ public class TelaInicial extends ActionBarActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_inicial);
+        getSupportActionBar().hide();
 
         CountDownTimer countDownTimer = new CountDownTimer(3000, 1000)
         {
@@ -30,7 +31,7 @@ public class TelaInicial extends ActionBarActivity
             @Override
             public void onFinish()
             {
-                Intent i = new Intent(getBaseContext(), TelaPrincipal.class);
+                Intent i = new Intent(getBaseContext(), TelaPreCadastro.class);
                 startActivity(i);
             }
         };

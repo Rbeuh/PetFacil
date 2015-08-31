@@ -9,7 +9,7 @@
     <include layout="@layout/action_barprecadastro"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:id="@+id/action_bar"></include>
+             android:id="@+id/include"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:background="@drawable/edittext_bordacolor"
-        android:layout_below="@+id/action_bar"
+        android:layout_below="@+id/include"
         android:layout_centerHorizontal="true"
         android:clickable="true"
         android:focusable="false"
@@ -73,7 +73,7 @@
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editTextConfSenha"
-        android:textColorHint="#ff000000"
+        android:textColorHint="#000000"
         android:hint="Confirme sua senha"
         android:background="@drawable/edittext_bordacolor"
         android:layout_below="@+id/editTextSenha"
