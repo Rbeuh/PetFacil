@@ -23,18 +23,16 @@
         android:background="@drawable/edittext_bordacolor"
         android:layout_below="@+id/include"
         android:layout_centerHorizontal="true"
-        android:clickable="true"
-        android:focusable="false"
         android:layout_marginBottom="15dp"
         android:textSize="25dp"
-        android:textIsSelectable="true"
-        android:maxLength="150"/>
+        android:textIsSelectable="false"
+        android:maxLength="150"
+        android:inputType="textPersonName"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:ems="10"
         android:id="@+id/editTextEmail"
         android:textColorHint="#ff000000"
         android:hint="E-mail"
@@ -52,7 +50,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/editTextSenha"
         android:hint="Senha"
         android:textColor="#ff000000"
@@ -71,7 +68,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/editTextConfSenha"
         android:textColorHint="#000000"
         android:hint="Confirme sua senha"

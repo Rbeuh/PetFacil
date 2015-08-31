@@ -28,7 +28,11 @@ public class UsuarioFactory
 
         if(email.trim().length() > 150 || email.trim().length() < 3)
         {
+<<<<<<< HEAD
+          throw new IllegalArgumentException("M�ximo de caract�res:150, mpinimo:3 ");
+=======
           throw new IllegalArgumentException("M�ximo de caract�res:150, mínimo:3 ");
+>>>>>>> origin/master
         }
 
        EmailValidator emailValidator = new EmailValidator();
@@ -36,16 +40,22 @@ public class UsuarioFactory
         emailValidator.validate(email.trim());
 
         {
+<<<<<<< HEAD
+            throw new IllegalArgumentException("M�ximo de caract�res: 350, m�nimo: 6");
+=======
             if (senha.trim().length() > 350 || senha.trim().length() < 6)
             {
                 throw new IllegalArgumentException("M�ximo de caract�res: 350, m�nimo: 6");
             }
+>>>>>>> origin/master
         }
 
-        if(confSenha.trim() != senha.trim())
+        if(!confSenha.trim().equals(senha.trim()))
         {
-            throw  new IllegalArgumentException("Senhas divergentes!");
+            throw new IllegalArgumentException("Senhas divergentes!");
         }
+
+        usuario = new Usuario(nome, email, senha);
 
         return usuario;
     }
